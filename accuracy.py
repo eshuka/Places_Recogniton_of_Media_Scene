@@ -22,7 +22,7 @@ def accuracy(top5_lists):
         if len(line) == 5:
             predictionVector_top5 = top5_lists
 
-    n_classes = 381
+    n_classes = 221
     confusionMat = [[0] * n_classes for i in range(n_classes)]
     for pred, exp in zip(predictionVector, truthVector):
         confusionMat[pred][exp] += 1
